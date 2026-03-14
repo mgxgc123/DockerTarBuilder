@@ -1,4 +1,6 @@
 name: x86-64 Pull and Save Docker Image
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # 整个工作流所有作业都强制使用 Node.js 24
 on:
   workflow_dispatch:
     inputs:
